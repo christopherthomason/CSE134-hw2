@@ -15,7 +15,7 @@
         <nav>
             <table>
                 <colgroup>
-                    <col span="3">
+                    <col span="4">
                 </colgroup>
                 <tr>
                     <td><a href="/index.html">Home</a></td>
@@ -90,9 +90,7 @@
             go out of style.
         </pre>
 
-        <span>
-            <p>I'm in a span!</p>
-        </span>
+        <p>Using span to <span class="highlight">make</span> this work</p>
 
         <details>
             <summary>What is hidden below?</summary>
@@ -155,7 +153,7 @@
             
             <label for="opts">Options:</label>
             <select>
-                <optgroup label="opts">
+                <optgroup id="opts" label="optgroup">
                     <option>Foo</option>
                     <option>Lorem Ipsum</option>
                 </optgroup>
@@ -163,13 +161,12 @@
         </form>
     </main>
 
-    <search>
-        <p>Results for: <b>Never Going to Give You Up</b></p>
-    </search>
-
     <footer>
         <hr>
         <p>This page was <em>developed</em> by Christopher Thomason</p>
     </footer>
 </body>
+<search>
+    <p>Results for: <b>Never Going to Give You Up</b></p>
+</search>
 </html>
