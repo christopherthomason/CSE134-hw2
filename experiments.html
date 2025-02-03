@@ -4,22 +4,23 @@
 <head>
     <meta charset="utf-8">
     <title>Christopher Thomason Portfolio</title>
-    <link href="images/idphoto.jpeg" rel="preload" as="image">
     <style>
-        my-ul {
-            display: block;
-            list-style-type: disc;
-            margin-left: 10px;
-            padding: 5px;
-            border: 1px;
+        my-strong {
+            font-weight: bold;
+            font-style: oblique;
+            text-decoration: underline;
         }
 
-        my-ul[list-element-type="circle"] {
-            list-style-type: circle;
+        my-strong[color="red"] {
+            color: red;
         }
 
-        my-ul[list-element-type="square"] {
-            list-style-type: square;
+        my-strong[color="blue"] {
+            color: blue;
+        }
+
+        my-strong[text-decor="ital"] {
+            text-decoration: italic;
         }
 
     </style>
@@ -44,12 +45,12 @@
             </table>
         </nav>
         <hr>
-        <search>
-            <p>Results for: <b>Never Going to Give You Up</b></p>
-        </search>
     </header>
 
     <main>
+        <search>
+            <p>Results for: <b>Never Going to Give You Up</b></p>
+        </search>
         <h2>
             Experiments
         </h2>
@@ -180,11 +181,7 @@
             </select>
         </form>
 
-        <my-ul list-element-type="square">
-            <li>Testing my custom list</li>
-            <li>Element 2</li>
-            <li>Element 3</li>
-        </my-ul>
+        <p>Showing off my <my-strong color="blue">custom</my-strong> <my-strong color="red">strong</my-strong> <my-strong text-decor="ital">tag</my-strong></p>
 
         <script>
             class HelloWorldElement extends HTMLElement {
