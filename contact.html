@@ -31,6 +31,24 @@
     <main>
         <h2>Contact Me</h2>
 
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </fieldset>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+            <label for="favpet">Choose between cats and dogs:</label>
+            <input list="pets" id="favpet" name="favpet">
+            <datalist id="favpet">
+                <option value="Cats">
+                <option value="Dogs">
+            </datalist>
+        </form>
     </main>
 
     <footer>
