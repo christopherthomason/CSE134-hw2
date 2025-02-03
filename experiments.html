@@ -185,6 +185,22 @@
             <li>Element 2</li>
             <li>Element 3</li>
         </my-ul>
+
+        <script>
+            class HelloWorldElement extends HTMLElement {
+                constructor() {
+                    super();
+                }
+
+                connectedCallback() {
+                    console.log('Hello, World!');
+                }
+            }
+
+            customElements.define('hello-world', HelloWorldElement);
+        </script>
+
+        <hello-world></hello-world>
     </main>
 
     <footer>
