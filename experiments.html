@@ -19,8 +19,8 @@
             color: blue;
         }
 
-        my-strong[text-decor="ital"] {
-            text-decoration: italic;
+        my-strong[font-style="ital"] {
+            font-style: italic;
         }
 
     </style>
@@ -48,9 +48,11 @@
     </header>
 
     <main>
-        <search>
-            <p>Results for: <b>Never Going to Give You Up</b></p>
-        </search>
+        <form action="/search" method="get">
+            <search>
+                <p>Results for: <b>Never Going to Give You Up</b></p>
+            </search>
+        </form>
         <h2>
             Experiments
         </h2>
@@ -181,7 +183,7 @@
             </select>
         </form>
 
-        <p>Showing off my <my-strong color="blue">custom</my-strong> <my-strong color="red">strong</my-strong> <my-strong text-decor="ital">tag</my-strong></p>
+        <p>Showing off my <my-strong color="blue">custom</my-strong> <my-strong color="red">strong</my-strong> <my-strong font-style="ital">tag</my-strong></p>
 
         <script>
             class HelloWorldElement extends HTMLElement {
